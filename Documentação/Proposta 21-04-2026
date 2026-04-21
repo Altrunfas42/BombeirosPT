@@ -1,0 +1,128 @@
+📄 PROPOSTA DE TRABALHO FINAL DE CURSO
+BombeirosPT — Plataforma Inteligente de Prevenção de Incêndios Florestais
+________________________________________
+Resumo Executivo
+O BombeirosPT é uma plataforma web inteligente para a prevenção, monitorização e gestão de incêndios florestais em Portugal. O sistema integra dois perfis principais — cidadão e bombeiro — numa solução centralizada que permite reportar ocorrências georreferenciadas, gerir pedidos de queima controlada e visualizar informação num mapa interativo em tempo real.
+Portugal é um dos países europeus mais afetados por incêndios florestais, com impactos significativos ao nível ambiental, económico e social. Em 2023, arderam mais de 30.000 hectares de área florestal, evidenciando a necessidade de sistemas mais eficientes de prevenção e resposta. Atualmente, os sistemas existentes são frequentemente fragmentados, pouco interativos e com limitada participação cidadã.
+O BombeirosPT propõe resolver esta lacuna através de uma plataforma digital que promove a comunicação entre cidadãos e autoridades, melhora a recolha de informação no terreno e contribui para uma abordagem de prevenção ativa. A solução combina tecnologias modernas de desenvolvimento web com sistemas de georreferenciação, permitindo uma gestão mais eficaz e informada das situações de risco.
+________________________________________
+1. Problema e Objetivos
+1.1 Contexto e Problema
+Os incêndios florestais representam um dos principais desafios ambientais em Portugal. A sua frequência e intensidade têm aumentado, agravadas por fatores como alterações climáticas, abandono rural e falta de monitorização eficaz.
+Os sistemas atualmente disponíveis apresentam várias limitações:
+•	falta de comunicação direta entre cidadãos e autoridades 
+•	ausência de plataformas interativas para reporte de ocorrências 
+•	processos pouco eficientes na gestão de pedidos de queima controlada 
+•	inexistência de uma visão centralizada e georreferenciada das ocorrências 
+•	dificuldade na integração de dados relevantes para apoio à decisão 
+O problema central que o projeto pretende resolver é:
+Como melhorar a comunicação, monitorização e gestão de situações de risco de incêndio através de uma plataforma digital integrada que envolva cidadãos e autoridades operacionais?
+________________________________________
+1.2 Objetivos SMART
+Os objetivos do projeto foram definidos de acordo com o modelo SMART (Específicos, Mensuráveis, Alcançáveis, Relevantes e Temporais):
+Objetivo	Métrica de Sucesso	Prazo
+Implementar sistema de autenticação com dois perfis (cidadão e bombeiro)	Login e registo funcionais	Semana 4
+Desenvolver mapa interativo com visualização de ocorrências georreferenciadas	Marcadores visíveis e interativos	Semana 9
+Criar sistema de pedidos de queima (criação, aprovação, rejeição)	Workflow completo funcional	Semana 7
+Implementar dashboard com estatísticas operacionais	Pelo menos 4 métricas visíveis	Semana 10
+Integrar dados reais de risco de incêndio (IPMA)	Dados apresentados no mapa	Semana 12
+Desenvolver documentação técnica e repositório organizado	README completo e funcional	Semana 15
+________________________________________
+1.3 Critérios de Sucesso
+O projeto será considerado bem-sucedido se cumprir os seguintes critérios:
+•	funcionamento completo do sistema (frontend + backend) sem erros críticos 
+•	criação e gestão de pedidos de forma consistente 
+•	visualização em tempo real no mapa com latência inferior a 2 segundos 
+•	interface clara, intuitiva e utilizável 
+•	integração funcional com dados externos 
+•	repositório organizado e documentado 
+Adicionalmente, o desempenho do sistema será avaliado através de métricas técnicas, como o tempo médio de resposta das operações e a taxa de sucesso dos pedidos.
+________________________________________
+2. Estado da Arte e Fundamentação
+2.1 Contexto
+A crescente disponibilidade de dados meteorológicos e ferramentas de georreferenciação abriu novas possibilidades no desenvolvimento de sistemas de apoio à gestão de incêndios. No entanto, muitas das soluções existentes são limitadas na interação com utilizadores e na integração de funcionalidades operacionais.
+________________________________________
+2.2 Análise de Sistemas Existentes
+Foram analisadas várias plataformas relevantes:
+•	IPMA (Instituto Português do Mar e da Atmosfera)
+Fornece dados meteorológicos e risco de incêndio. No entanto, não permite interação com utilizadores nem gestão de ocorrências. 
+•	Fogos.pt
+Plataforma de monitorização de incêndios em tempo real. Apesar de fornecer informação atualizada, não permite participação ativa dos cidadãos. 
+•	VOST Portugal
+Sistema de comunicação em situações de emergência. Não apresenta estrutura para gestão de dados ou integração com mapas interativos. 
+________________________________________
+2.3 Análise Crítica
+As soluções analisadas apresentam limitações significativas ao nível da interação, integração e apoio à decisão. A maioria dos sistemas é orientada para monitorização passiva, não permitindo uma gestão ativa das ocorrências.
+BombeirosPT diferencia-se ao propor uma plataforma integrada que combina:
+•	participação cidadã 
+•	gestão operacional 
+•	visualização geográfica 
+•	integração de dados 
+Esta abordagem permite não apenas monitorizar, mas também atuar sobre o problema.
+________________________________________
+3. Metodologia e Plano de Trabalho
+3.1 Abordagem Metodológica
+O desenvolvimento do projeto seguirá uma abordagem incremental e iterativa, inspirada nos princípios Agile. Esta metodologia permite uma evolução contínua do sistema, com validação frequente das funcionalidades implementadas.
+________________________________________
+3.2 Arquitetura do Sistema
+O sistema será desenvolvido segundo uma arquitetura cliente-servidor:
+•	Backend: Node.js + Express 
+•	Base de dados: MySQL + Prisma 
+•	Frontend: React 
+•	Mapas: Leaflet 
+Esta arquitetura permite escalabilidade, modularidade e facilidade de manutenção.
+________________________________________
+3.3 Funcionalidades por Perfil
+Cidadão
+•	registo e autenticação 
+•	criação de pedidos de queima 
+•	reporte de situações de risco 
+•	consulta de ocorrências 
+Bombeiro
+•	registo e autenticação 
+•	visualização de pedidos no mapa 
+•	aprovação ou rejeição de pedidos 
+•	monitorização de ocorrências 
+________________________________________
+3.4 Planeamento
+Semana	Tarefa
+1–2	Planeamento e análise
+3–4	Desenvolvimento backend
+5–6	Desenvolvimento frontend
+7–8	Integração do mapa
+9–10	Dashboard
+11–12	Integração de APIs
+13–14	Testes
+15	Documentação
+________________________________________
+4. Riscos e Mitigação
+Risco	Mitigação
+Indisponibilidade de APIs externas	Utilização de dados simulados e cache
+Atrasos no desenvolvimento frontend	Priorização de funcionalidades essenciais
+Problemas de integração	Testes contínuos
+Sobrecarga de trabalho	Planeamento com margem
+Caso a API externa esteja indisponível durante períodos prolongados, será ativado um sistema de fallback com dados previamente armazenados.
+Serão realizados testes de 2 em 2 semanas com os bombeiros para garantir o melhor desenvolvimento do projeto.
+________________________________________
+5. Repositório e Organização
+Repositório: https://github.com/Altrunfas42/firewatch.git
+O projeto será desenvolvido num repositório GitHub estruturado da seguinte forma:
+•	/backend — API e lógica do sistema 
+•	/frontend — aplicação React 
+•	/documentação — documentação 
+O repositório incluirá:
+•	README com instruções de instalação 
+•	commits regulares 
+Esta organização garante reprodutibilidade e clareza no desenvolvimento.
+________________________________________
+6. Considerações Éticas
+O sistema respeitará princípios de proteção de dados:
+•	utilização de autenticação segura (JWT) 
+•	armazenamento de passwords com hashing 
+•	recolha de dados apenas com consentimento 
+•	não recolha de localização em background 
+________________________________________
+7. Conclusão
+BombeirosPT  é um projeto tecnicamente viável, socialmente relevante e alinhado com os objetivos da Engenharia Informática. A solução proposta aborda um problema real em Portugal, utilizando tecnologias modernas e uma arquitetura robusta.
+Atualmente, o sistema já possui uma implementação funcional das principais componentes, encontrando-se numa fase de evolução e otimização. O planeamento apresentado garante a entrega de um sistema completo dentro do prazo estabelecido.
+
