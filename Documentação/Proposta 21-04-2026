@@ -1,11 +1,20 @@
+
 📄 PROPOSTA DE TRABALHO FINAL DE CURSO
 BombeirosPT — Plataforma Inteligente de Prevenção de Incêndios Florestais
 ________________________________________
 Resumo Executivo
-O BombeirosPT é uma plataforma web inteligente para a prevenção, monitorização e gestão de incêndios florestais em Portugal. O sistema integra dois perfis principais — cidadão e bombeiro — numa solução centralizada que permite reportar ocorrências georreferenciadas, gerir pedidos de queima controlada e visualizar informação num mapa interativo em tempo real.
-Portugal é um dos países europeus mais afetados por incêndios florestais, com impactos significativos ao nível ambiental, económico e social. Em 2023, arderam mais de 30.000 hectares de área florestal, evidenciando a necessidade de sistemas mais eficientes de prevenção e resposta. Atualmente, os sistemas existentes são frequentemente fragmentados, pouco interativos e com limitada participação cidadã.
-O BombeirosPT propõe resolver esta lacuna através de uma plataforma digital que promove a comunicação entre cidadãos e autoridades, melhora a recolha de informação no terreno e contribui para uma abordagem de prevenção ativa. A solução combina tecnologias modernas de desenvolvimento web com sistemas de georreferenciação, permitindo uma gestão mais eficaz e informada das situações de risco.
-________________________________________
+O BombeirosPT é uma plataforma web inteligente para a prevenção, monitorização e gestão de incêndios florestais em Portugal. O sistema integra dois perfis principais, cidadão e bombeiro, numa solução centralizada que permite reportar ocorrências georreferenciadas, gerir pedidos de queima controlada e visualizar informação num mapa interativo em tempo real.
+Portugal é um dos países europeus mais afetados por incêndios florestais, com impactos significativos ao nível ambiental, económico e social. Em 2023, arderam mais de 30.000 hectares, evidenciando a necessidade de soluções tecnológicas mais eficazes. 
+O sistema proposto pretende melhorar a comunicação entre cidadãos e autoridades, aumentar a rapidez de resposta e fornecer uma visão centralizada das ocorrências. Como resultados esperados, prevê-se a criação de uma aplicação funcional com mapa interativo, sistema de autenticação, gestão de pedidos e integração de dados externos. Os critérios de sucesso incluem o funcionamento completo do sistema sem erros críticos, a visualização em tempo real no mapa, tempos de resposta reduzidos e a correta integração de dados externos.
+
+
+
+
+
+
+
+
+
 1. Problema e Objetivos
 1.1 Contexto e Problema
 Os incêndios florestais representam um dos principais desafios ambientais em Portugal. A sua frequência e intensidade têm aumentado, agravadas por fatores como alterações climáticas, abandono rural e falta de monitorização eficaz.
@@ -32,12 +41,26 @@ ________________________________________
 O projeto será considerado bem-sucedido se cumprir os seguintes critérios:
 •	funcionamento completo do sistema (frontend + backend) sem erros críticos 
 •	criação e gestão de pedidos de forma consistente 
+•	Capacidade de criação e gestão de pelo menos 50 pedidos em ambiente de teste
+•	Atualização correta dos dados no mapa em tempo real
 •	visualização em tempo real no mapa com latência inferior a 2 segundos 
+•	Tempo médio de resposta da API inferior a 2 segundos
 •	interface clara, intuitiva e utilizável 
+•	Taxa de sucesso das operações superior a 95%
 •	integração funcional com dados externos 
 •	repositório organizado e documentado 
 Adicionalmente, o desempenho do sistema será avaliado através de métricas técnicas, como o tempo médio de resposta das operações e a taxa de sucesso dos pedidos.
-________________________________________
+
+
+
+
+
+
+
+
+
+
+
 2. Estado da Arte e Fundamentação
 2.1 Contexto
 A crescente disponibilidade de dados meteorológicos e ferramentas de georreferenciação abriu novas possibilidades no desenvolvimento de sistemas de apoio à gestão de incêndios. No entanto, muitas das soluções existentes são limitadas na interação com utilizadores e na integração de funcionalidades operacionais.
@@ -59,7 +82,7 @@ BombeirosPT diferencia-se ao propor uma plataforma integrada que combina:
 •	visualização geográfica 
 •	integração de dados 
 Esta abordagem permite não apenas monitorizar, mas também atuar sobre o problema.
-________________________________________
+
 3. Metodologia e Plano de Trabalho
 3.1 Abordagem Metodológica
 O desenvolvimento do projeto seguirá uma abordagem incremental e iterativa, inspirada nos princípios Agile. Esta metodologia permite uma evolução contínua do sistema, com validação frequente das funcionalidades implementadas.
@@ -83,7 +106,7 @@ Bombeiro
 •	visualização de pedidos no mapa 
 •	aprovação ou rejeição de pedidos 
 •	monitorização de ocorrências 
-________________________________________
+
 3.4 Planeamento
 Semana	Tarefa
 1–2	Planeamento e análise
@@ -94,7 +117,20 @@ Semana	Tarefa
 11–12	Integração de APIs
 13–14	Testes
 15	Documentação
-________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 4. Riscos e Mitigação
 Risco	Mitigação
 Indisponibilidade de APIs externas	Utilização de dados simulados e cache
@@ -105,7 +141,7 @@ Caso a API externa esteja indisponível durante períodos prolongados, será ati
 Serão realizados testes de 2 em 2 semanas com os bombeiros para garantir o melhor desenvolvimento do projeto.
 ________________________________________
 5. Repositório e Organização
-Repositório: https://github.com/Altrunfas42/BombeirosPT.git
+Repositório:  https://github.com/Altrunfas42/BombeirosPT.git
 O projeto será desenvolvido num repositório GitHub estruturado da seguinte forma:
 •	/backend — API e lógica do sistema 
 •	/frontend — aplicação React 
@@ -114,7 +150,10 @@ O repositório incluirá:
 •	README com instruções de instalação 
 •	commits regulares 
 Esta organização garante reprodutibilidade e clareza no desenvolvimento.
-________________________________________
+
+
+
+
 6. Considerações Éticas
 O sistema respeitará princípios de proteção de dados:
 •	utilização de autenticação segura (JWT) 
@@ -125,4 +164,31 @@ ________________________________________
 7. Conclusão
 BombeirosPT  é um projeto tecnicamente viável, socialmente relevante e alinhado com os objetivos da Engenharia Informática. A solução proposta aborda um problema real em Portugal, utilizando tecnologias modernas e uma arquitetura robusta.
 Atualmente, o sistema já possui uma implementação funcional das principais componentes, encontrando-se numa fase de evolução e otimização. O planeamento apresentado garante a entrega de um sistema completo dentro do prazo estabelecido.
+
+ 
+Bibliografia
+
+IPMA — Dados meteorológicos e risco de incêndio
+ https://www.ipma.pt/ 
+ICNF — Estatísticas de incêndios em Portugal
+ https://www.icnf.pt/
+ ANEPC — Gestão de ocorrências e alertas 
+https://www.prociv.pt/ 
+Fogos.pt — Plataforma de monitorização em tempo real
+ https://fogos.pt/ 
+European Forest Fire Information System — Sistema europeu de monitorização de incêndios
+ https://effis.jrc.ec.europa.eu/ 
+Machine Learning aplicado a incêndios florestais 
+Fernández-Añez, N. et al. (2021). Machine learning prediction of forest fires: A review. Environmental Modelling & Software. 
+Crowdsourcing em emergências 
+Liu, S. et al. (2019). Crowdsourcing in crisis management: A systematic review. International Journal of Disaster Risk Reduction.
+
+
+
+
+
+
+
+
+
 
