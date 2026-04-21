@@ -1,0 +1,68 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  CITIZEN
+  FIREFIGHTER
+}
+
+enum BurnRequestStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum ReportStatus {
+  NEW
+  IN_REVIEW
+  RESOLVED
+}
+
+model User {
+  id           Int           @id @default(autoincrement())
+  name         String
+  email        String        @unique
+  passwordHash String
+  role         UserRole      @default(CITIZEN)
+  createdAt    DateTime      @default(now())
+
+  burnRequests BurnRequest[]
+  reports      Report[]
+}
+
+model BurnRequest {
+  id          Int      @id @default(autoincrement())
+  latitude    Float
+  longitude   Float
+  date        DateTime
+  startTime   String
+  endTime     String
+  description String
+  priority    String   @default("MEDIUM")
+  status      String   @default("PENDING")
+
+  userId Int
+  user   User @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now())
+}
+
+model Report {
+  id          Int          @id @default(autoincrement())
+  userId      Int
+  type        String
+  description String
+  latitude    Float
+  longitude   Float
+  imageUrl    String?
+  status      ReportStatus @default(NEW)
+  createdAt   DateTime     @default(now())
+
+  user        User         @relation(fields: [userId], references: [id])
+}
