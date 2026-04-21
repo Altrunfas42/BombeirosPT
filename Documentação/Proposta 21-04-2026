@@ -105,7 +105,7 @@ Caso a API externa esteja indisponível durante períodos prolongados, será ati
 Serão realizados testes de 2 em 2 semanas com os bombeiros para garantir o melhor desenvolvimento do projeto.
 ________________________________________
 5. Repositório e Organização
-Repositório: https://github.com/Altrunfas42/firewatch.git
+Repositório: https://github.com/Altrunfas42/BombeirosPT.git
 O projeto será desenvolvido num repositório GitHub estruturado da seguinte forma:
 •	/backend — API e lógica do sistema 
 •	/frontend — aplicação React 
