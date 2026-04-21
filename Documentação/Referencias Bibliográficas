@@ -1,3 +1,20 @@
+IPMA — Dados meteorológicos e risco de incêndio
+ https://www.ipma.pt/ 
+ICNF — Estatísticas de incêndios em Portugal
+ https://www.icnf.pt/
+ ANEPC — Gestão de ocorrências e alertas 
+https://www.prociv.pt/ 
+Fogos.pt — Plataforma de monitorização em tempo real
+ https://fogos.pt/ 
+European Forest Fire Information System — Sistema europeu de monitorização de incêndios
+ https://effis.jrc.ec.europa.eu/ 
+Machine Learning aplicado a incêndios florestais 
+Fernández-Añez, N. et al. (2021). Machine learning prediction of forest fires: A review. Environmental Modelling & Software. 
+Crowdsourcing em emergências 
+Liu, S. et al. (2019). Crowdsourcing in crisis management: A systematic review. International Journal of Disaster Risk Reduction.
+
+
+
 https://cdnsciencepub.com/doi/10.1139/er-2020-0019
 Este estudo apresenta uma revisão de aplicações de machine learning na previsão de incêndios.
 
@@ -6,14 +23,4 @@ https://www.gee.gov.pt/RePEc/WorkingPapers/GEE_PAPERS_185.pdf
 
 https://www.bombeiros.pt/tecnologia-inteligencia-artificial-reforca-detecao-precoce-de-incendios-florestais/
 Mais uma tecnologia com IA que tem tido grandes resultados em países la fora mas que ainda não foi aplicada em Portugal, tecnologia esta diferente da nossa mas comprava que IA pode ser uma grande ajuda na previsão de incêndios.
-
-
-
-
-
-
-
-IPMA — https://www.ipma.pt/ 
-Fogos.pt — https://fogos.pt/ 
-ICNF — https://www.icnf.pt/
 
